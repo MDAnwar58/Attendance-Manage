@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management</title>
+
+
+    <!-- css start -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- css end -->
+
+    <!-- js css -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+
+    <!-- ==================attendance details start================== -->
+
+    <div class="attendance-bg">
+        <div class="container-fulid mx-auto px-3">
+            <h6 class="py-1 fw-blod">Attendance Details</h6>
+        </div>
+    </div>
+
+    <!-- ==================attendance details end================== -->
+
+    <!-- ==================attendance manage start================== -->
+
+    <div class="attendance-manage-bg pt-2">
+        <div class="container-fluid px-3">
+            <div class="row">
+                <!-- attendance manage -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- uint -->
+                            <div class="row mb-1">
+                                <label for="uint" class="col-sm-4 label-same">Unit</label>
+                                <div class="col-sm-8">
+                                    <Select name="unit" class="w-100">
+                                        <option value="">Anowara Knit Composite Ltd.</option>
+                                        <option value="">Anowara Knit Composite Ltd 2</option>
+                                        <option value="">Anowara Knit Composite Ltd 3</option>
+                                    </Select>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bg-secondary w-100 line"></div>
+                                </div>
+                            </div>
+                            <!-- department -->
+                            <div class="row mb-1">
+                                <label for="department" class="col-sm-4 label-same">Department</label>
+                                <div class="col-sm-8">
+                                    <Select name="department" class="w-100">
+                                        <option value=""></option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </Select>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bg-secondary w-100 line"></div>
+                                </div>
+                            </div>
+                            <!-- line -->
+                            <div class="row">
+                                <label for="line" class="col-sm-4 label-same">line</label>
+                                <div class="col-sm-8">
+                                    <Select name="line" class="w-100">
+                                        <option value=""></option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </Select>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bg-secondary w-100 line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <!-- empoloy type -->
+                            <div class="row mb-1">
+                                <label for="empoloy-type" class="col-sm-4 label-same">Empoloy Type</label>
+                                <div class="col-sm-8">
+                                    <Select name="empoloy-type" class="w-100">
+                                        <option value="">WORKER(PRICE RATE)</option>
+                                        <option value="">PRICE RATE 2</option>
+                                        <option value="">PRICE RATE 3</option>
+                                    </Select>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bg-secondary w-100 line"></div>
+                                </div>
+                            </div>
+
+                            <!-- section -->
+                            <div class="row mb-1">
+                                <label for="section" class="col-sm-4 label-same">Section</label>
+                                <div class="col-sm-8">
+                                    <Select name="section" class="w-100">
+                                        <option value=""></option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </Select>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bg-secondary w-100 line"></div>
+                                </div>
+                            </div>
+
+                            <!-- shift -->
+                            <div class="row mb-1">
+                                <label for="shift" class="col-sm-4 label-same">Shift</label>
+                                <div class="col-sm-8">
+                                    <Select name="shift" class="w-100">
+                                        <option value=""></option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </Select>
+                                </div>
+                                <div class="col-12">
+                                    <div class="bg-secondary w-100 line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="card card-body">
+                                <div class="row">
+                                    <!-- A/P/W/H/L -->
+                                    <div class="col-xl-4 col-lg-6">
+                                        <div class="row mb-1">
+                                            <label for="A/P/W/H/L" class="col-sm-5 text-muted">A/P/W/H/L</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" name="" class="w-100">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="bg-secondary w-100 line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Date From -->
+                                    <div class="col-xl-4 col-lg-6">
+                                        <div class="row mb-1">
+                                            <label for="date-from" class="col-sm-6 text-muted">
+                                                <input type="checkbox" value="">
+                                                Date From
+                                            </label>
+                                            <div class="col-sm-6">
+                                                <input type="date" name="date-from" class="w-100">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="bg-secondary w-100 line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- to -->
+                                    <div class="col-xl-4 col-lg-6">
+                                        <div class="row mb-1">
+                                            <div class="col-md-10">
+                                                <div class="row">
+                                                    <label for="date-from" class="col-sm-4 text-muted">
+                                                        To
+                                                    </label>
+                                                    <div class="col-sm-8">
+                                                        <input type="date" name="date-from" class="w-100">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="bg-secondary w-100 line"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <button class="btn btn-sm btn-light text-muted">
+                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- attendace for -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-10 attendance-for mt-lg-0 mt-3">
+                            <span class="fst-italic fw-medium">Attendance For</span>
+                            <div class="row p-2">
+                                <!-- emp code -->
+                                <div class="col-sm-5 mb-3 mb-md-0 col-12">
+                                    <h6 class="pt-2">Emp Code</h6>
+                                    <input type="text" name="emp_code" class="w-100">
+                                </div>
+
+                                <!-- emp code show -->
+                                <div class="col-sm-7 col-12">
+                                    <div class="row">
+                                        <div class="col-sm-4 col-2 d-flex align-items-center justify-content-end">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="mb-1">
+                                                        <button class="btn btn-sm btn-light">
+                                                            <i class="fa-solid fa-user-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="mb-1">
+                                                        <button class="btn btn-sm btn-light">
+                                                            <i class="fa-solid fa-broom"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn btn-sm btn-light">
+                                                            <i class="fa-solid fa-user-xmark"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8 col-10 border border-1 border-dark">
+                                            <div class="row">
+                                                <div class="col-md-12 emp_code">
+                                                    <span>0514520</span><br>
+                                                    <span>0514523</span><br>
+                                                    <span>0514524</span><br>
+                                                    <span>0514518</span><br>
+                                                    <span>0514522</span><br>
+                                                    <span>0514519</span><br>
+                                                    <span>0514525</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row name_row">
+                        <div class="col-md-12">
+                            <span class="fst-italic">MARGINA BEGUM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================attendance manage end================== -->
+
+
+    <!-- ==================attendance table start================== -->
+
+    <div class="attendance-table-bg pt-2">
+        <div class="container-fulid px-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive bg-light border border-1 border-dark pe-3 attendance-table">
+                        <table class="table table-bordered border-dark">
+                            <thead class="table table-bordered border-bottom-0 text-center">
+                                <tr>
+                                    <th class="border border-dark"></th>
+                                    <th class="">Date</th>
+                                    <th class="">Code</th>
+                                    <th class="">Name</th>
+                                    <th class="">In Time</th>
+                                    <th class="">Late</th>
+                                    <th class="">Work Hour</th>
+                                    <th class="">Out Time</th>
+                                    <th class="">OT</th>
+                                    <th class="">Status</th>
+                                    <th class="">Night</th>
+                                    <th class="">Status2</th>
+                                    <th class="">Shift</th>
+                                    <th class="">Remark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- text danger -->
+                                <tr class="text-danger">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514519</td>
+                                    <td>MD. TUFAJAL HUSAN</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">A</td>
+                                    <td></td>
+                                    <td>A</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+                                <tr class="text-danger">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514525</td>
+                                    <td>MARGINA BEGUN</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">A</td>
+                                    <td></td>
+                                    <td>A</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+                                <tr class="text-danger">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514518</td>
+                                    <td>MD. AMDADUL HOQUE</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">A</td>
+                                    <td></td>
+                                    <td>A</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+                                <tr class="text-danger">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514521</td>
+                                    <td>MD. SHAFIK MIA</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">A</td>
+                                    <td></td>
+                                    <td>A</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+                                <tr class="text-danger">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514522</td>
+                                    <td>PRIMAL CHANDRA BISHWASHAR...</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">A</td>
+                                    <td></td>
+                                    <td>A</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+
+                                <!-- text warning -->
+                                <tr class="text-warning">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514519</td>
+                                    <td>MD. TUFAJAL HUSAN</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">W</td>
+                                    <td></td>
+                                    <td>W</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+                                <tr class="text-warning">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514525</td>
+                                    <td>MARGINA BEGUN</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">W</td>
+                                    <td></td>
+                                    <td>W</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+                                <tr class="text-warning">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514518</td>
+                                    <td>MD. AMDADUL HOQUE</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">W</td>
+                                    <td></td>
+                                    <td>W</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+                                <tr class="text-warning">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514521</td>
+                                    <td>MD. SHAFIK MIA</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">W</td>
+                                    <td></td>
+                                    <td>W</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+                                <tr class="text-warning">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514522</td>
+                                    <td>PRIMAL CHANDRA BISHWASHAR...</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">W</td>
+                                    <td></td>
+                                    <td>W</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+
+                                <!-- text warning -->
+                                <tr class="text-danger">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514525</td>
+                                    <td>MARGINA BEGUN</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">A</td>
+                                    <td></td>
+                                    <td>A</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+                                <tr class="text-danger">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514522</td>
+                                    <td>PRIMAL CHANDRA BISHWASHAR...</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">A</td>
+                                    <td></td>
+                                    <td>A</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+                                <tr class="text-danger">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514519</td>
+                                    <td>MD. TUFAJAL HUSAN</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">A</td>
+                                    <td></td>
+                                    <td>A</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+                                <tr class="text-danger">
+                                    <td class="border border-1 border-secondary border-end-0"></td>
+                                    <td>08-APR-2023</td>
+                                    <td class="text-center">0514518</td>
+                                    <td>MD. AMDADUL HOQUE</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td></td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">A</td>
+                                    <td></td>
+                                    <td>A</td>
+                                    <td>RAMADAN (07:00-15:30)</td>
+                                    <td></td>
+                                    <!-- <td class="border border-light"></td> -->
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-12 attendance-table-footer">
+                    <div class="row py-3">
+                        <div class="col-md-3">
+                            <span>A: 10, p: 0, L: 0, W: 5, H: 0, N: 0, OT: 0.0</span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <span>Note: Green=Locked, GreenYellow=Leave, DarkViolet=Holiday, Orange=Weekend, Red=Absent,
+                                Black=Present</span>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h6>Total: 15</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================attendance table end================== -->
+
+    <!-- ==================footer start================== -->
+
+    <div class="footer-bg pt-2 pb-sm-2">
+        <div class="container-fulid px-3">
+            <div class="row">
+                <div class="col-sm-12 text-sm-end text-center">
+                    <span>
+                        <button class="btn btn-light btn-sm mb-2 mb-sm-0">
+                            <i class="fa-solid fa-pen-nib me-1"></i>
+                            Update
+                        </button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light btn-sm mb-2 mb-sm-0">
+                            <i class="fa-sharp fa-solid fa-trash-can"></i>
+                            Delete
+                        </button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light btn-sm mb-2 mb-sm-0">
+                            <i class="fa-solid fa-broom me-1"></i>
+                            Clear
+                        </button>
+                    </span>
+                    <span>
+                        <button class="btn btn-light btn-sm mb-2 mb-sm-0">
+                            <i class="fa-sharp fa-solid fa-ban"></i>
+                            Close
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================footer end================== -->
+
+
+</body>
+
+</html>

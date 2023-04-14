@@ -1,0 +1,101 @@
+/* ===========commen css=========== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(226, 252, 251);
+}
+
+/* ===========commen css=========== */
+
+/* =================attendance start================= */
+.attendance-bg {
+    background-color: rgb(134, 207, 250);
+}
+
+/* =================attendance end================= */
+
+/* =================attendance manage start================= */
+.attendance-manage-bg .line {
+    height: 1px;
+}
+
+.attendance-manage-bg button {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1074px) {
+    .attendance-manage-bg .label-same {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 1018px) {
+    .attendance-manage-bg .label-same {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .attendance-manage-bg .label-same {
+        font-size: 16px;
+    }
+}
+
+.attendance-manage-bg label {
+    font-size: 15px;
+}
+
+/* attendance-for */
+.attendance-manage-bg .attendance-for {
+    position: relative;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 5px;
+}
+
+.attendance-manage-bg .attendance-for>span {
+    position: absolute;
+    top: -11px;
+    font-size: 14px;
+    background-color: rgb(226, 252, 251);
+}
+
+.attendance-manage-bg .attendance-for .emp_code>span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.attendance-manage-bg .name_row span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* =================attendance manage end================= */
+
+
+/* =================attendance table start================= */
+
+.attendance-table-bg .attendance-table {
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.attendance-table-bg .attendance-table-footer span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.attendance-table-bg .attendance-table-footer h6 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* =================attendance table end================= */
+
+/* =================footer start================= */
+
+.footer-bg {
+    background-color: rgb(135, 206, 250);
+}
+
+/* =================footer end================= */
